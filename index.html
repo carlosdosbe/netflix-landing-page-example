@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Netflix Landing Page Example</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
+      <ul class="navigation">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">TV Shows</a></li>
+        <li><a href="#">Movies</a></li>
+        <li><a href="#">Lastest</a></li>
+        <li><a href="#">My list</a></li>
+      </ul>
+      <div class="search">
+          <input type="text" name="" value="" placeholder="Search">
+          <i class="fas fa-search"></i>
+      </div>
+    </header>
+    <div class="banner">
+      <img src="img/bg.jpg" alt="" class="bg">
+      <div class="content">
+        <img src="img/name.png" alt="" class="movieTitle">
+        <h4>
+          <span>2020</span>
+          <span><i>12+</i></span>
+          <span>1h 55m</span>
+          <span>Action</span>
+        </h4>
+        <p>
+          Finn y Poe guían a la Resistencia para detener los planes de la Primera Orden para formar un nuevo imperio, mientras Rey anticipa un enfrentamiento inevitable con Kylo Ren.
+        </p>
+        <div class="buttons">
+          <a href="#"><i class="fas fa-play"></i> Play</a>
+          <a href="#"><i class="fas fa-plus"></i> My list</a>
+        </div>
+      </div>
+      <a class="play" onclick="toggleTrailer();"><img src="img/play.png" alt="">Watch Trailer</a>
+    </div>
+    <div class="trailerMovie">
+      <iframe width="100%" height="75%" src="https://www.youtube.com/embed/8Qn_spdM5Zg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="videoTrailer"></iframe>
+      <img src="img/close.png" alt="" class="close" onclick="toggleTrailer();">
+    </div>
+    <script src="js/app.js">
+
+    </script>
+  </body>
+</html>
